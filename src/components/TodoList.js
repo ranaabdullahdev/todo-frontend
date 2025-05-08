@@ -11,7 +11,7 @@ const TodoList = () => {
       try {
         setLoading(true);
         const data = await fetchTodos();
-        setTodos(data);
+        setTodos(data.todos);
         setError(null);
       } catch (err) {
         console.error('Failed to fetch todos:', err);

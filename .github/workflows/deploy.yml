@@ -21,7 +21,7 @@ jobs:
         key: ${{ secrets.EC2_KEY }}
         script: |
           cd /var/www/html/todo-frontend
-          git pull origin main
-          npm install
-          npm run build
-          pm2 restart frontend || pm2 start npm --name "frontend" -- start
+          sudo git pull origin main
+          sudo npm install
+          sudo npm run build
+          sudo pm2 restart frontend || pm2 start npm --name "frontend" -- start
