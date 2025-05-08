@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL =  'http://localhost:8000/api/todos';
+const API_URL =  'http://23.21.203.86:8000/todos';
+// const API_URL = 'http://localhost:8000/todos'; // Uncomment for local development
 
 export const fetchTodos = async () => {
   try {
